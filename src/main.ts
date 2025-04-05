@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     // 关闭整个nestjs的日志输出，包括访问日志，错误日志等
     // logger: false,
-    logger: ['error', 'warn'],
+    // logger: ['error', 'warn'],
   });
   const configService = app.get(ConfigService);
   const port = configService.get<number>('PORT', 3999);
