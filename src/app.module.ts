@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import { ConfigModule } from './common/config/config.module';
-import { LogsModule } from './common/logs/logs.module';
+import { LogsModule } from './common/logger/logs.module';
 import { UserModule } from './user/user.module';
 
 @Global()
